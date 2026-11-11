@@ -71,20 +71,34 @@
   </header>
   <main class="wrap" id="policy">
     <h1>Privacy policy</h1>
-    <p class="updated">Last updated <time datetime="2026-11-03">3 November 2026</time></p>
+    <p class="updated">Last updated <time datetime="2026-11-11">11 November 2026</time></p>
     <p>This policy explains how <strong>Jetfall: Jetpack Arena</strong> (Android package <strong>com.rasla.jetfall</strong>), developed by <strong>Rasla</strong>, handles information when you play the game or contact us.</p>
-    <p>The current release supports guest play. Google sign-in, Google Play Games account features and cloud-profile sync are not enabled in the release described here.</p>
+    <p>You can play as a guest without an account. Signing in with Google is optional and adds a cloud career, friends and the leaderboard.</p>
     <nav aria-label="Policy sections">
       <a href="#information">Information we use</a>
       <a href="#services">Third-party services</a>
       <a href="#choices">Your choices</a>
+      <a href="#delete-account">Delete your account</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <section aria-labelledby="information">
       <h2 id="information">Information we use</h2>
       <h3>Progress and settings on your device</h3>
-      <p>The game saves your guest progress, XP, level, match statistics, cosmetic selections and settings in its local app storage. These records let you continue playing and keep your preferences. The current release does not upload your solo career to a game-account service.</p>
+      <p>The game saves your guest progress, XP, level, match statistics, cosmetic selections and settings in its local app storage. These records let you continue playing and keep your preferences. Guest progress stays on your device.</p>
+      <h3>Optional Google sign-in and your Jetfall account</h3>
+      <p>If you sign in with Google, Google confirms your identity. We keep only your stable Google account identifier and your Google display name; we never see your password, and we do not store your email address or Google profile photo. We create a Jetfall account that stores:</p>
+      <ul>
+        <li>your account identifier, pilot name, avatar and an eight-digit pilot code;</li>
+        <li>your career: XP, level, runs, wins, waves cleared, eliminations, headshots, eliminations per weapon, time played and solo run results;</li>
+        <li>your cosmetic choices;</li>
+        <li>pilots you follow and room invitations you send or receive;</li>
+        <li>sign-in sessions, stored only as hashed tokens.</li>
+      </ul>
+      <p>Some account information is visible to other players. The leaderboard shows the pilot name, avatar, XP and level of every pilot with XP. Signed-in players who look up your pilot code, or who follow you, can see your pilot name, avatar, XP, level and career totals. When you follow someone, they are told your pilot name and avatar. Your Google account identifier, sessions and cosmetics are never shown to other players.</p>
+      <h3>Anonymous play statistics</h3>
+      <p>To learn which modes and maps people play and whether players come back, the game sends a small set of play statistics: when the app is opened, and when a match starts and ends. A match record contains the kind of match (solo, quick match, nearby or online), the mode, the map, the solo difficulty, the result (won, lost or quit), how long it lasted and the number of eliminations. Each record also carries the game version, the platform and a random identifier created on your device when the game first runs.</p>
+      <p>That identifier is not your Google account or your Jetfall account, and we do not link the statistics to either. The statistics contain no name, pilot code, contact detail, precise location or advertising identifier. Uninstalling the game or clearing its storage creates a new identifier. You can turn statistics off at any time in <strong>Settings → About → Share play stats</strong>.</p>
       <h3>Nearby and online multiplayer</h3>
       <p>Nearby matches connect directly to the host on your shared Wi-Fi network or hotspot. Participating devices use local network addresses and exchange the game information needed to run the match.</p>
       <p>Private online matches use a relay hosted on Cloudflare. The service processes your IP address and connection details, room codes, temporary access tickets, participant identifiers, generated pilot names, cosmetic choices, selected map and match data. Match data includes actions, positions, health, ammunition, combat events and scores.</p>
@@ -97,12 +111,14 @@
 
     <section aria-labelledby="services">
       <h2 id="services">Third-party services</h2>
+      <h3>Google sign-in and Google Play Games</h3>
+      <p>Google sign-in is provided by Google. If you use Google Play Games features such as achievements, Google stores that progress under its own terms. Google's Privacy Policy applies to the information Google handles for these services.</p>
       <h3>Google privacy consent and rewarded ads</h3>
-      <p>The Android app includes Google's User Messaging Platform and Mobile Ads SDK. The consent service checks privacy-consent information when the app starts, including during guest play. The ad SDK is initialized when you explicitly request a rewarded ad and the consent service permits an ad request. The current release uses Google's sample ad identifiers for test ads.</p>
+      <p>The Android app includes Google's User Messaging Platform and Mobile Ads SDK. The consent service checks privacy-consent information when the app starts, including during guest play. The ad SDK is initialized when you explicitly request a rewarded ad and the consent service permits an ad request. Rewarded ads are served by Google AdMob, and you only see one when you choose to watch it for a reward.</p>
       <p>Google services may process IP addresses, device or advertising identifiers, consent choices, app interactions and diagnostic information. An IP address may be used to estimate a general location. Collection and use depend on the service, device settings and applicable consent choices. These services may communicate with Google even when you are not playing an online match.</p>
       <p>See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google's Mobile Ads data disclosure</a> for more information about Google's handling of this data.</p>
       <h3>Cloudflare hosting</h3>
-      <p>Cloudflare processes network requests and online-room data to provide hosting, connectivity, security and abuse prevention. Its infrastructure may also process operational logs. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a>.</p>
+      <p>Cloudflare hosts the Jetfall account service and its database, the play statistics and the online-room relay. It processes network requests and online-room data to provide hosting, connectivity, security and abuse prevention. Its infrastructure may also process operational logs. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a>.</p>
       <p>These providers operate internationally, so information may be processed outside your country. Their retention and privacy practices apply to data they handle through their services.</p>
     </section>
 
@@ -110,6 +126,10 @@
       <h2 id="retention">How long information is kept</h2>
       <ul>
         <li><strong>Local saves:</strong> remain in app storage until you clear that storage or uninstall the game.</li>
+        <li><strong>Jetfall account and career:</strong> kept until you ask us to delete the account. Deleting it removes the account, its career, run results, follows, invitations and sessions.</li>
+        <li><strong>Sign-in sessions:</strong> expire after seven days. An account keeps at most eight sessions, and signing out ends the current one.</li>
+        <li><strong>Room invitations:</strong> expire ten minutes after they are sent.</li>
+        <li><strong>Play statistics:</strong> kept while they help us improve the game. Because they are not linked to an account, we cannot find or delete one person's statistics.</li>
         <li><strong>Online rooms:</strong> are configured to expire 30 minutes after creation, with room-storage cleanup at expiry. If the host leaves earlier, the room closes; its stored metadata can remain until that cleanup.</li>
         <li><strong>Access tickets:</strong> can be used for two minutes. Their hashed records can remain until room cleanup.</li>
         <li><strong>Live match messages:</strong> are relayed during a session; the game relay does not intentionally save a match history or replay of those messages.</li>
@@ -124,12 +144,16 @@
       <ul>
         <li>Play solo if you do not want to join a multiplayer room. Google consent services can still connect when a network is available.</li>
         <li>Skip the optional rewarded-ad action if you do not want to request an ad.</li>
+        <li>Play as a guest if you do not want a Jetfall account, or use <strong>Sign out</strong> on the Account page.</li>
+        <li>Turn off <strong>Settings → About → Share play stats</strong> to stop sending play statistics.</li>
         <li>Open <strong>Settings → Privacy options</strong> in the game to review Google's privacy choices where that form is available or required.</li>
         <li>Use your Android device's ad privacy controls to manage advertising identifiers and related preferences.</li>
         <li>Clear the game's storage in Android Settings, or uninstall it, to remove local progress and preferences. This does not delete data separately held by service providers.</li>
       </ul>
       <p>For access, correction or deletion requests concerning information handled by Rasla, email <a href="mailto:0xrasla@gmail.com?subject=Jetfall%20privacy%20request">0xrasla@gmail.com</a> with the subject “Jetfall privacy request.” Describe your request and provide only the information needed to locate it. We may need to verify that a request relates to you. Some rights and retention exceptions depend on applicable law.</p>
-      <p>The current guest release does not create a Jetfall account, so there is no Jetfall account to delete. Requests concerning Google's own records can also be made through the controls described in Google's Privacy Policy.</p>
+      <h3 id="delete-account">Delete your Jetfall account</h3>
+      <p>In the game, open <strong>Settings → About → Delete account</strong> while signed in and tap <strong>Delete</strong> twice to confirm. The account is deleted immediately.</p>
+      <p>If you can no longer open the game, email <a href="mailto:0xrasla@gmail.com?subject=Jetfall%20account%20deletion">0xrasla@gmail.com</a> with the subject “Jetfall account deletion” and include your pilot name and pilot code (shown on the Friends page). We may ask you to confirm the request from the game. Deletion removes your account, career, run results, follows, invitations and sessions. Progress saved on your device is not affected; clear the game's storage to remove it. Requests concerning Google's own records can be made through the controls described in Google's Privacy Policy.</p>
     </section>
 
     <section aria-labelledby="security">
@@ -140,7 +164,7 @@
 
     <section aria-labelledby="children">
       <h2 id="children">Parents and guardians</h2>
-      <p>Guest play does not ask for a date of birth or a child's personal profile. If you have a privacy concern about a child using the game, or believe a child has sent us personal information, contact us so we can review and address it.</p>
+      <p>The game does not ask for a date of birth or a child's personal profile. If you have a privacy concern about a child using the game, or believe a child has sent us personal information, contact us so we can review and address it.</p>
     </section>
 
     <section aria-labelledby="updates">
